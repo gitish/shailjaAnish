@@ -30,10 +30,7 @@
       "applypatch-msg": "echo hello husky",
       "pre-applypatch": "echo \"[husky] pre-applypatch\"",
       "post-applypatch": "echo \"[husky] post-applypatch\"",
-      "pre-commit": "check-commit"
-    },
-    "check-commit": {
-      "*": "[husky]: pre-commit check script"
+      "pre-commit": "echo pre-commit"
     }
   },
   "eslintConfig": {
