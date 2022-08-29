@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "anix": "^1.3.6",
+    "husky": "^8.0.1",
     "jquery": "^3.6.0",
     "particles-bg": "^2.5.5",
     "react": "^17.0.1",
@@ -23,6 +24,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo hello husky",
+      "pre-applypatch": "echo \"[husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[husky] post-applypatch\"",
+      "pre-commit": "check-commit"
+    },
+    "check-commit": {
+      "*": "[husky]: pre-commit check script"
+    }
   },
   "eslintConfig": {
     "extends": [
